@@ -7,6 +7,7 @@ gem 'sqlite3'
 
 group :development, :test do
   gem 'capybara'
+  gem 'database_cleaner'
   gem 'minitest'
   gem 'pry'
   gem 'rspec'

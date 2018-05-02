@@ -4,6 +4,8 @@ class Film < ActiveRecord::Base
   validates :year, presence: true
   validates :box_office_sales, presence: true
 
+  belongs_to :genre
+
   def self.total_box_office_sales
     sum(:box_office_sales)
   end

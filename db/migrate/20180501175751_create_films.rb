@@ -6,7 +6,7 @@ class CreateFilms < ActiveRecord::Migration[5.2]
       t.integer :year
       t.integer :box_office_sales
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end

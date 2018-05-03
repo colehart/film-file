@@ -9,4 +9,8 @@ class FilmFile < Sinatra::Base
     @film = Film.find(:id)
     erb :"films/show"
   end
+
+  get '/' do
+    erb :index
+  end
 end
